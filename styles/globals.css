@@ -85,19 +85,70 @@ body {
   overflow-x: hidden;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.page-numbers {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid wheat;
+}
+
+.page-numbers > * {
+  padding: 10px;
+}
+
+.page-numbers .active {
+  background-color: #f15252;;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+th, td {
+  text-align:left;
+  padding: 8px;
+  
+}
+
+th {
+  background-color: #f15252;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ecb3b3;
+}
+.search{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.search-input {
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+  cursor: pointer;
+  padding: 8px  10px 10px 16px;
+  margin: 0px;
+  background-color: whitesmoke;
+}
+.search-button{
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+  padding: 8px 10px 10px 16px;
+  margin: 0px 0px 0px 0px;
+  background-color: whitesmoke;
+}
+.search-input .active {
+  background-color: #f15252;;
 }
 
 @media (prefers-color-scheme: dark) {
